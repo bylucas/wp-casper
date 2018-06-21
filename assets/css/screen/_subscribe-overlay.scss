@@ -1,0 +1,111 @@
+// 10. Subscribe Overlay
+
+.subscribe-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,25,40,0.97);
+    opacity: 0;
+    overflow-y: scroll;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+
+    backdrop-filter: blur(3px);
+}
+
+.subscribe-overlay:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.subscribe-overlay-content {
+    position: relative;
+    z-index: 9999;
+    margin: $spacer 0 5vw 0;
+    padding: 4vw;
+    color: #fff;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        opacity: .7;
+    }
+}
+
+.subscribe-overlay-title {
+    display: inline-block;
+    margin: $spacer 0 10px 0;
+    font-size: 5rem;
+    line-height: 1.15em;
+}
+
+.subscribe-overlay-description {
+    margin: 0 auto 50px;
+    max-width: 650px;
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+    line-height: 1.3em;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.subscribe-overlay-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    z-index: 10001;
+    
+    svg {
+    height: 4rem;
+    width: 4rem;
+    fill: $whitegrey;
+    opacity: .7;
+}
+}
+
+ @media screen and (max-width: 768px) {
+        .subscribe-overlay {
+             -webkit-overflow-scrolling: touch;
+ }
+
+ .subscribe-overlay-title {
+   
+    margin: 0 0 10px 0;
+}
+}
+
+@media (max-width: 500px) {
+    .subscribe-overlay-content {
+    
+    //margin: $spacer*3 0 5vw 0;
+   
+}
+
+.subscribe-overlay-title {
+   
+    font-size: 2.7rem;
+    //margin: $spacer*4 0 15px 0;
+}
+
+.subscribe-overlay-description {
+    
+    font-size: 1.9rem;
+    margin: 0 auto 40px;
+}
+.subscribe-overlay-close {
+    
+    top: 10px;
+    }
+}
+
+//The Google contact link
+.bigger {
+    font-size: 3rem;
+}

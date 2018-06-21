@@ -1,0 +1,151 @@
+// Media min-width 900px
+
+
+@media (min-width: 900px) {
+
+//Table hovers
+.post-full-content table {
+
+tbody tr td,
+tbody tr th {
+  transition: background-color 1.0s ease-in-out;
+}
+
+tbody tr:hover td,
+tbody tr:hover th {
+  background-color: tint($whitegrey, 6%);
+}
+}
+
+//Link hovers
+a:hover {
+    text-decoration: underline;
+}
+
+.site-nav-logo:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+//post hovers
+.post-full-content a:hover {
+    //color: $blue;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.author-card-button:hover {
+    border-color: $blue;
+    color: $blue;
+    
+}
+
+.post-card:hover {
+    text-decoration: none;
+    box-shadow: rgba(39,44,49,0.07) 8px 28px 50px, rgba(39, 44, 49, 0.04) 1px 6px 12px;
+    transition: all 0.7s ease;
+    transform: translate3D(0, -1px, 0) scale(1.02);
+}
+
+.post-card-tags:hover,
+.post-card-tags a:hover,
+.post-card-title a:hover {
+    text-decoration: none;
+    transition: all 0.7s ease;
+    transform: translate3D(0, -1px, 0) scale(1.02);
+
+}
+
+.profile-image-wrapper img:hover {
+    border: 1px solid $blue;
+    
+}
+
+.author-card-name a:hover:after,
+.author-card-name a:focus:after {
+    width: 100%;
+}
+
+.author-card-name a:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.read-next-card-header-title a:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.site-footer-content a:hover {
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+}
+
+
+.nav-menu ul a:hover {
+        color: $main-color;
+}
+
+//social buttons
+.social-link:hover,
+.social-wrap a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+//floating header
+.floating-header-share-tw:hover {
+        background: #55acee;
+}
+
+.floating-header-share-fb:hover {
+        background: #3b5998;
+}
+
+.floating-header-logo a:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+// subscribe overlay
+.subscribe-overlay-close svg:hover,
+.subscribe-overlay-content a:hover {
+        opacity: 1;
+        text-decoration: none;
+}
+
+//tabs in author portfolio
+.tab-link:hover {
+            color: $blue;
+
+            svg {
+             fill: $blue;   
+            }
+}
+
+.tab-content p a.behance-link svg:hover {
+    fill: $blue; 
+}
+
+#search-results h2:hover,
+#search-results h2 a:hover {
+        opacity: 1;
+        text-decoration: none;
+
+}
+
+.comment-respond form .submit:hover {
+    opacity: 1;
+}
+
+.subscribe-form button:hover {
+    opacity: 1;
+}
+
+.sitemap-col ul li a:hover {
+    
+    opacity: 1;
+}
+
+}//end 900
+       
