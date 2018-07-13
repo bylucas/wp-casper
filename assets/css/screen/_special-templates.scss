@@ -8,3 +8,100 @@
         padding-top: 0;
     }
 }
+
+//Post Extras
+// Introducing Scss
+
+$width: $spacer/1.5;
+$radius: 6px;
+
+@mixin background($background-color: $blue) {
+	background: $background-color;
+	box-shadow: inset 0 0 4px darken($background-color, 25%);
+}
+
+@mixin border-radius($radius) {
+	border-top-left-radius: $radius;
+	border-top-right-radius: $radius * 2;
+	border-bottom-left-radius: $radius + 15;
+	border-bottom-right-radius: $radius + 25;
+}
+
+.box-scss {
+	width: 80%;
+	height: 100px;
+	padding: $spacer;
+	margin: $width auto;
+	@include background($blue);
+	@include border-radius(10px);
+
+	p {
+		text-align: center;
+		color: white;
+	}
+}
+
+.box2-scss {
+	border: $border;
+	@include background($midgrey);
+	max-width: 80%;
+	padding: $spacer;
+	margin: $spacer auto;
+			
+		h1 {
+			font-size: 32px;
+			text-align: center;
+					
+		a {
+			color: $blue;
+			box-shadow: none;
+						
+			&:hover {
+				color: white;
+			}
+		}
+	}
+		p {
+			text-align: center;
+			color: white;
+		}
+}
+
+.box3-scss {
+	width: 80%;
+	margin: $width auto;
+	border: $border;
+	@include border-radius(10px);
+	padding: $spacer/2;
+	background-color: $midgrey;
+
+	p {
+		text-align: center;
+		color: white;
+	}
+}
+	
+.box4-scss {
+	@extend .box3-scss;
+	background-color: $blue;
+}
+	
+.box5-scss {
+	@extend .box3-scss;
+	background-color: $red;
+}
+
+.box6-scss {
+		$width: 300px + 29px;
+		width: $width;
+		margin: $width / 3 - 20px auto;
+		border: $border;
+		padding: $spacer;
+		
+		p {
+			font-size: $width / 9;
+			text-align: center;
+		}
+	}
+
+

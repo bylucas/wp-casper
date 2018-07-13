@@ -21,11 +21,11 @@
 
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <?php get_template_part('partials/icons/point'); ?></div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=<?php the_title(); ?>&amp;url=<?php esc_url( get_permalink() ); ?>"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <?php get_template_part('partials/icons/twitter'); ?>
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=<?php esc_url( get_permalink() ); ?>"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <?php get_template_part('partials/icons/facebook'); ?>
         </a>

@@ -44,7 +44,8 @@ echo '<ul>';
 				<li><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
 			<?php endforeach; }
 	
-	echo '</ul>'; 
+	echo '</ul>';
+	wp_reset_postdata(); 
 ?>
 	</div>
   <footer class="read-next-card-footer">
@@ -55,22 +56,6 @@ echo '<ul>';
   </footer>
     </article>
 <?php
-
-$args2 = array(
-			'category__in' => $category_ids,
-			'numberposts' => 2,
-			'post__not_in' => array($post->ID)
-		);
-
-		$related_posts2 = get_posts( $args2 );
-		if($related_posts2) {
-			foreach ( $related_posts2 as $post ) : setup_postdata( $post );
-				
-				get_template_part( 'formats/content', 'index' );
-		endforeach; }
-		
-  wp_reset_postdata();
-	
-}		
+}	
  }  /* end casper related posts function */
 ?>
