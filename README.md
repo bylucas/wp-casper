@@ -8,9 +8,9 @@ ____
 
 Take a look at the latest default theme for [Ghost](http://github.com/tryghost/ghost/), Casper.
 
-This theme is the _WordPress_ version of __Casper__ by Ghost,  __wp-Casper__. At the moment this is a private theme for [howardlucas.io](https://howardlucas.io/), but hopefully will be a general WordPress theme in the near future. [howardlucas.io](https://howardlucas.io/) will run off a child theme of wp-Casper.
+This theme is the _WordPress_ version of __Casper__ by Ghost,  __wp-Casper__.
 
-> A preview of the wp-casper html version can be seen [here](https://howardlucas.io/themes/casper-html/)
+> The theme is no longer supported
 
 # Post Meta - SEO
 
@@ -70,7 +70,7 @@ If looking to make a general theme the _author portfolio_ needs attention, ie ne
 
 ### Menu Icons
 
-Will need to make the _menu icons_ available from `admin area stylesheet`. Icons called from _howardlucas.io_
+Will need to make the _menu icons_ available from `admin area stylesheet`.
 
     .nav-menu ul li.pic-1,
     .nav-menu ul li.pic-2 {
@@ -81,7 +81,7 @@ Will need to make the _menu icons_ available from `admin area stylesheet`. Icons
     }
 
     .pic-1 {
-    background-image: url(https://howardlucas.io/post-images/bylucas/icon-one.png);
+    background-image: url(path to image);
     }
     .pic-2 { ....etc.
 
@@ -90,4 +90,4 @@ The category picture needs looking at when used as background image. At the mome
 
 # Copyright & License
 
-Copyright (c) 2009-2018 howardlucas.io - Released under the [MIT license](LICENSE).
+Copyright (c) 2009-2018 how59.com - Released under the [MIT license](LICENSE).
